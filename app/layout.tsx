@@ -1,3 +1,5 @@
+import "../styles/globals.css";
+
 export const metadata = {
   title: 'John Cañero Blog',
   description: 'Blog of John Cañero',
@@ -10,7 +12,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head/>
       <body>{children}</body>
     </html>
   )
