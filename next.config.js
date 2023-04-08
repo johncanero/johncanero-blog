@@ -4,7 +4,10 @@ const nextConfig = {
   // 1. Add experiment appDirectory and state experimental code
   experimental: {
     appDir: true
-  }
+  },
+  images: {
+    domains: ['cdn.sanity.io'],
+  },
 }
 
 module.exports = nextConfig
