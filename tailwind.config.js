@@ -5,12 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {}, 
     // Input Font Families (Themes) in Tailwind Config
     fontFamily: {
-      Poppins: ["Poppins", "sans-serif"],
-      OpenSans: ["Open Sans", "sans-serif"],
-      Montserrat: ["Montserrat", "sans-serif"],
+      poppins: ['var(--font-poppins)'],
+      montserrat: ['var(--font-montserrat)']
     },
   },
   plugins: [],
