@@ -16,19 +16,22 @@ export const revalidate = 60;
 
 export default async function HomePage() {
   if (previewData()) {
-    return;
-    <PreviewSuspense
-      fallback={
-        <div role="status">
-          <p className="text-center text-lg animate-pulse text-[#0ea5e9]">
-            Loading Preview Data...
-          </p>
-        </div>
-      }
-    >
-      <PreviewBlogList query={query} />
-    </PreviewSuspense>;
+    return (
+      <PreviewSuspense
+        fallback={
+          <div role="status">
+            <p className="text-center text-lg animate-pulse text-[#0ea5e9]">
+              Loading Preview Data
+            </p>
+          </div>
+        }
+      >
+        <PreviewBlogList query={query} />
+      </PreviewSuspense>
+    );
   }
+  
   const posts = await client.fetch(query);
   return <BlogList posts={posts} />;
 }
+// Timestamp: 1:25 (https://www.youtube.com/watch?v=x3fCEPFgUSM&t=3804s)
