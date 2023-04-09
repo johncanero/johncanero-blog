@@ -1,5 +1,6 @@
 import Image from "next/image";
 import urlFor from "@/lib/urlFor";
+import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
 
 type Props = {
   posts: Post[];
@@ -35,8 +36,8 @@ function BlogList({ posts }: Props) {
                     })}
                   </p>
                 </div>
-              
-              {/* Category Tags */}
+
+                {/* Category Tags */}
                 <div className="flex flex-col gap-y-2 md:flex-row md:gap-x-2">
                   {post.categories.map(category => (
                     <div
@@ -54,6 +55,12 @@ function BlogList({ posts }: Props) {
               <p className="text-lg font-bold underline">{post.title}</p>
               <p className="text-gray-500 line-clamp-2">{post.description}</p>
             </div>
+            
+            {/* Read Post */}
+            <p className="mt-5 flex items-center font-bold group-hover:underline">
+              Read Post
+              <ArrowUpRightIcon className="ml-2 h-4 w-4"></ArrowUpRightIcon>
+            </p>
           </div>
         ))}
       </div>
