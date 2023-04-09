@@ -31,3 +31,5 @@ function BlogList({ posts }: Props) {
 }
 
 export default BlogList;
+
+// Timestamp: 1:33 (https://www.youtube.com/watch?v=x3fCEPFgUSM&t=5128s)
