@@ -6,7 +6,7 @@ import { Poppins } from '@next/font/google'
 
 // Install npm @next/font 
 const poppins = Poppins({
-  subsets:['latin'],
+  subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '700', '800', '900'],
   variable: '--font-poppins'
 })
@@ -24,11 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* Input classname = {poppins.className} */}
-      <body className={`${poppins.variable} font-poppins`}>
-        <Header />
-        <Banner />
-
-        {children}
+      <body className="max-w-7xl mx-auto">
+        <div className={`${poppins.variable} font-poppins`}>
+          <Header />
+          <Banner />
+          {children}
+        </div>
       </body>
     </html>
   )
