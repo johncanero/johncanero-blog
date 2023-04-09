@@ -30,8 +30,6 @@ export default async function HomePage() {
       </PreviewSuspense>
     );
   }
-  
   const posts = await client.fetch(query);
   return <BlogList posts={posts} />;
 }
-// Timestamp: 1:25 (https://www.youtube.com/watch?v=x3fCEPFgUSM&t=3804s)

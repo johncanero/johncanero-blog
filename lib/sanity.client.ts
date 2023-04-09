@@ -1,5 +1,4 @@
 import { createClient } from "next-sanity";
-require('dotenv').config();
 
 export const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 export const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
