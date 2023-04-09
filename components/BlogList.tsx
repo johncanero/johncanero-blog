@@ -23,6 +23,7 @@ function BlogList({ posts }: Props) {
                 fill
               />
 
+              {/* Title and Date */}
               <div className="absolute bottom-0 flex w-full justify-between rounded bg-neutral-900 bg-opacity-20 p-5 text-white drop-shadow-lg backdrop-blur-lg">
                 <div>
                   <p className="font-bold">{post.title}</p>
@@ -34,7 +35,8 @@ function BlogList({ posts }: Props) {
                     })}
                   </p>
                 </div>
-
+              
+              {/* Category Tags */}
                 <div className="flex flex-col gap-y-2 md:flex-row md:gap-x-2">
                   {post.categories.map(category => (
                     <div
@@ -46,6 +48,11 @@ function BlogList({ posts }: Props) {
                   ))}
                 </div>
               </div>
+            </div>
+            {/* Title and Description */}
+            <div className="mt-5 flex-1">
+              <p className="text-lg font-bold underline">{post.title}</p>
+              <p className="text-gray-500 line-clamp-2">{post.description}</p>
             </div>
           </div>
         ))}

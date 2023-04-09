@@ -12,5 +12,7 @@ module.exports = {
       montserrat: ['var(--font-montserrat)']
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 };
