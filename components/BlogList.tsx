@@ -18,7 +18,7 @@ function BlogList({ posts }: Props) {
         {posts.map((post) => (
           // ClientSideRoute 
           <ClientSideRoute route={`/post/${post.slug.current}`} key={post._id}>
-            <div key={post._id} className="group flex cursor-pointer flex-col">
+            <div key={post._id} className="flex flex-col cursor-pointer group">
               <div className="relative w-full transition-transform duration-200 ease-out h-80 transform-gpu drop-shadow-xl group-hover:scale-105">
                 <Image
                   className="object-cover object-left lg:object-center"
@@ -28,10 +28,10 @@ function BlogList({ posts }: Props) {
                 />
 
                 {/* Title and Date */}
-                <div className="absolute bottom-0 flex w-full justify-between rounded bg-neutral-900 bg-opacity-20 p-5 text-white drop-shadow-lg backdrop-blur-lg">
+                <div className="absolute bottom-0 flex justify-between w-full p-5 text-white rounded bg-neutral-900 bg-opacity-20 drop-shadow-lg backdrop-blur-lg">
                   <div>
                     <p className="font-bold">{post.title}</p>
-                    <p className="transform-gpu subpixel-antialiased">
+                    <p className="subpixel-antialiased transform-gpu">
                       {new Date(post._createdAt).toLocaleDateString('en-US', {
                         day: 'numeric',
                         month: 'long',
@@ -54,15 +54,15 @@ function BlogList({ posts }: Props) {
                 </div>
               </div>
               {/* Title and Description */}
-              <div className="mt-5 flex-1">
+              <div className="flex-1 mt-5">
                 <p className="text-lg font-bold underline">{post.title}</p>
                 <p className="text-gray-500 line-clamp-2">{post.description}</p>
               </div>
 
               {/* Read Post */}
-              <p className="mt-5 flex items-center font-bold group-hover:underline">
+              <p className="flex items-center mt-5 font-bold group-hover:underline">
                 Read Post
-                <ArrowUpRightIcon className="ml-2 h-4 w-4"></ArrowUpRightIcon>
+                <ArrowUpRightIcon className="w-4 h-4 ml-2"></ArrowUpRightIcon>
               </p>
             </div>
           </ClientSideRoute>
@@ -74,4 +74,4 @@ function BlogList({ posts }: Props) {
 
 export default BlogList;
 
-// Timestamp: 1:44 (https://www.youtube.com/watch?v=x3fCEPFgUSM&t=5128s)
+// Timestamp: 1:48 (https://www.youtube.com/watch?v=x3fCEPFgUSM&t=5128s)
