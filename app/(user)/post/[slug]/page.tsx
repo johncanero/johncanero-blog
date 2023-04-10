@@ -6,15 +6,16 @@ import urlFor from "@/lib/urlFor";
 // PortableText and RichText Components
 import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "../../../../components/RichTextComponents";
- 
-//  Props and Function
+
+// Props
 type Props = {
     params: {
         slug: string;
     };
 };
 
-export const revalidate = 60;
+// Revalidate (npm run build then npm start)
+export const revalidate = 30; // re-evalidate this page every 30 seconds
 
 export async function generateStaticParams() {
     const query = groq`
@@ -29,6 +30,7 @@ export async function generateStaticParams() {
     }));
 }
 
+//  Props and Function
 async function Post({ params: { slug } }: Props) {
     const query = groq`
       *[_type=="post" && slug.current ==$slug][0] {
@@ -86,7 +88,7 @@ async function Post({ params: { slug } }: Props) {
                             </div>
                         </div>
 
-                        {/* Description (2:07:27) */}
+                        {/* Description */}
                         <div>
                             <h2 className="pt-10 italic">{post.description}</h2>
                             <div className="flex items-center justify-end mt-auto space-x-2">

@@ -12,7 +12,7 @@ const query = groq`
   categories[]->,
 } | order(_createdAt desc)
 `;
-export const revalidate = 60;
+export const revalidate = 30; // re-evalidate this page every 30 seconds
 
 export default async function HomePage() {
   if (previewData()) {

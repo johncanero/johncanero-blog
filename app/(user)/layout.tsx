@@ -12,10 +12,18 @@ const poppins = Poppins({
   variable: '--font-poppins'
 })
 
+// Next Js Metadata Documentation
 export const metadata = {
   title: 'John Cañero Blog',
   description: 'Blog of John Cañero',
+  keywords: 'blog, lifestyle, developer, creator',
+  icons: {
+    icon: '/johncaneroProfile.ico',
+    shortcut: '/johncaneroProfile.ico',
+  },
 }
+
+
 
 export default function RootLayout({
   children,
@@ -24,6 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/johncaneroProfile.ico" />
+      </head>
       {/* Input classname = {poppins.className} */}
       <body className="mx-auto max-w-7xl">
         <div className={`${poppins.variable} font-poppins`}>
