@@ -1,4 +1,5 @@
 import "../../styles/globals.css";
+import Head from "next/head";
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
 import { Poppins } from '@next/font/google'
@@ -24,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* Input classname = {poppins.className} */}
-      <body className="max-w-7xl mx-auto">
+      <body className="mx-auto max-w-7xl">
         <div className={`${poppins.variable} font-poppins`}>
           <Header />
           <Banner />

@@ -1,8 +1,12 @@
-import { groq } from "next-sanity";
 import Image from "next/image";
+// groq, client and urlFor
+import { groq } from "next-sanity";
 import { client } from "@/lib/sanity.client";
 import urlFor from "@/lib/urlFor";
-
+// PortableText and RichText Components
+import { PortableText } from "@portabletext/react";
+import { RichTextComponents } from "../../../../components/RichTextComponents";
+ 
 //  Props and Function
 type Props = {
     params: {
@@ -73,16 +77,34 @@ async function Post({ params: { slug } }: Props) {
                                     width={40}
                                     className="rounded-full"
                                 />
+
+
                                 <div className="w-64">
                                     <h3 className="text-lg font-bold">{post.author.name}</h3>
+                                    <div></div>
                                 </div>
                             </div>
+                        </div>
 
-                            {/* Description (2:07:27) */}
+                        {/* Description (2:07:27) */}
+                        <div>
+                            <h2 className="pt-10 italic">{post.description}</h2>
+                            <div className="flex items-center justify-end mt-auto space-x-2">
+                                {post.categories.map((category) => (
+                                    <p
+                                        key={category._id}
+                                        className="px-3 py-1 mt-4 text-sm font-semibold text-white bg-gray-800 rounded-full"
+                                    >
+                                        {category.title}
+                                    </p>
+                                ))}
+                            </div>
                         </div>
                     </section>
                 </div>
             </section>
+            {/* Portable Text */}
+            <PortableText value={post.body} components={RichTextComponents} />
         </article>
     )
 }
