@@ -4,10 +4,14 @@ import urlFor from "@/lib/urlFor";
 
 export const RichTextComponents = {
   types: {
-    images: ({ value }: any) => {
+    image: ({ value }: any) => {
       return (
-        <div>
-          <Image src={urlFor(value).url()} alt="Blog Post Image" fill />
+        <div className="flex justify-center py-10 mx-auto">
+          <Image
+            src={urlFor(value).url()}
+            alt="Blog Post Image"
+            width={800}
+            height={800} />
         </div>
       );
     },
