@@ -30,7 +30,7 @@ export async function generateStaticParams() {
     }));
 }
 
-//  Props and Function
+//  Props and Function 
 async function Post({ params: { slug } }: Props) {
     const query = groq`
       *[_type=="post" && slug.current ==$slug][0] {
