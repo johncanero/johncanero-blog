@@ -7,7 +7,7 @@ function Banner() {
                 {/* Banner Content */}
                 <div className="flex flex-col justify-between p-5 px-5 lg:flex-row">
                     <div>
-                        <h1 className="text-5xl font-semibold">Insights and Reflections from John Cañero</h1>
+                        <h1 className="text-3xl font-semibold lg:text-5xl md:text-4xl">Insights and Reflections from John Cañero</h1>
                         <h3 className="mt-5 font-medium md:mt-4">
                             About Life, Career, Technology, Investing, and Self-Realization
                         </h3>
