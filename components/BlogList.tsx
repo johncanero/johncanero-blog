@@ -28,7 +28,7 @@ function BlogList({ posts }: Props) {
                 />
 
                 {/* Title and Date */}
-                <div className="absolute bottom-0 flex justify-between w-full p-5 text-white rounded bg-neutral-900 bg-opacity-20 drop-shadow-lg backdrop-blur-lg">
+                <div className="absolute bottom-0 flex justify-between w-full p-5 text-white rounded bg-neutral-900 bg-opacity-30 drop-shadow-lg backdrop-blur-lg">
                   <div>
                     <p className="font-bold">{post.title}</p>
                     <p className="subpixel-antialiased transform-gpu">
