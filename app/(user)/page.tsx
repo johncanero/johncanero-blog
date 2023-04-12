@@ -5,6 +5,8 @@ import PreviewSuspense from "../../components/PreviewSuspense";
 import PreviewBlogList from "../../components/PreviewBlogList";
 import BlogList from "../../components/BlogList";
 
+// Shortcut rfce
+
 const query = groq`
 *[_type=="post"] {
   ...,

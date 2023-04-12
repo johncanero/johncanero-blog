@@ -1,5 +1,4 @@
 import "../../styles/globals.css";
-import Head from "next/head";
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
 import { Poppins } from '@next/font/google'
@@ -32,9 +31,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/johncaneroProfile.ico" />
-      </head>
       {/* Input classname = {poppins.className} */}
       <body className="mx-auto max-w-7xl">
         <div className={`${poppins.variable} font-poppins`}>

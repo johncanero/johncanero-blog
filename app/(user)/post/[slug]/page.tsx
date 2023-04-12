@@ -7,6 +7,8 @@ import urlFor from "@/lib/urlFor";
 import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "../../../../components/RichTextComponents";
 
+// Shortcut rfce
+
 // Props
 type Props = {
     params: {
