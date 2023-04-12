@@ -45,7 +45,7 @@ function BlogList({ posts }: Props) {
                     {post.categories.map(category => (
                       <div
                         key={category._id}
-                        className="h-fit rounded-full bg-[#0ea5e9] px-3 py-1 text-center text-sm font-semibold text-black"
+                        className="px-3 py-1 text-sm font-medium text-center text-black bg-white rounded-full h-fit"
                       >
                         <p>{category.title}</p>
                       </div>
