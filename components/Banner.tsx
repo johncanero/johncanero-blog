@@ -8,6 +8,7 @@ function Banner() {
                         About Life, Career, Compounding, and Self-Realization
                     </h3>
                 </div>
+                
                 <p className="max-w-sm mt-5 font-medium text-sm text-gray-400 md:mt-2">
                     Explore my blog to find my personal views and perspectives on a range of topics, and gain insight into my understanding of the world.
                 </p>
