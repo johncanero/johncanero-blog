@@ -13,7 +13,7 @@ function BlogList({ posts }: Props) {
       {/* Border */}
       <hr className="border-[#0ea5e9] mb-10" />
 
-      <div className="grid grid-cols-1 gap-10 px-10 pb-24 md:grid-cols-2 gap-y-16">
+      <div className="grid grid-cols-1 gap-10 px-6 pb-24 md:px-10 lg:px-16 md:grid-cols-2 gap-y-16">
         {/* Posts */}
         {posts.map((post) => (
           // ClientSideRoute 
