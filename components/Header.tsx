@@ -3,8 +3,8 @@ import Link from "next/link";
 
 function Header() {
     return (
-        <header className="flex items-center justify-between px-4 py-5 space-x-2 font-bold md:px-10">
-            <div className="flex items-center space-x-2">
+        <header className="flex justify-between mx-5 p-5 max space-x-2 lg:space-x-5 font-bold md:px-10">
+            <div className="flex space-x-2">
                 <Link href="/">
                     <Image
                         className="object-cover rounded-full"
@@ -14,8 +14,9 @@ function Header() {
                         alt="Logo"
                     />
                 </Link>
-                <h1 className="text-sm md:text-base">John Cañero Blog</h1>
+                <h1 className="text-sm md:text-base mt-3">John Cañero Blog</h1>
             </div>
+            {/* Discover my Creative Projects */}
             <div>
                 <Link
                     href="https://johncanero.com/"
