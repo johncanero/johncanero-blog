@@ -46,7 +46,7 @@ async function Post({ params: { slug } }: Props) {
             <section className="space-y-2 border-[#0ea5e9] text-white">
                 {/* Image */}
                 <div className="relative flex flex-col justify-between min-h-56 md:flex-row">
-                    <div className="absolute top-0 w-full h-full p-10 opacity-25 blur-sm">
+                    <div className="absolute top-0 w-full h-full p-10 opacity-10  blur-sm">
                         <Image
                             src={urlFor(post.mainImage).url()}
                             alt={post.author.name}
@@ -95,7 +95,7 @@ async function Post({ params: { slug } }: Props) {
                                 {post.categories.map((category) => (
                                     <p
                                         key={category._id}
-                                        className="px-3 py-1 mt-4 text-sm font-semibold text-white bg-gray-800 rounded-full"
+                                        className="px-3 py-1 mt-4 text-sm font-semibold text-black bg-white rounded-full"
                                     >
                                         {category.title}
                                     </p>
