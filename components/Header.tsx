@@ -16,13 +16,13 @@ function Header() {
                 </Link>
                 <h1 className="text-sm md:text-base">John Cañero Blog</h1>
             </div>
-            <div> 
+            <div>
                 <Link
-                    href="https://upskillhub-by-johncanero.vercel.app/"
+                    href="https://johncanero.com/"
                     target="_blank"
-                    className="py-2 px-3 md:px-5 md:py-3 text-xs md:text-base bg-gray-900 text-[#0ea5e9] flex items-center rounded-full text-center "
+                    className="py-2 px-4 md:px-5 md:py-3 text-xs md:text-base bg-white text-gray-800 font-semibold border-2 border-gray-400 rounded-xl shadow hover:bg-gray-100 flex items-center text-center "
                 >
-                    Sign Up to the UpskillHub University
+                    Discover My Creative Projects
                 </Link>
             </div>
         </header>
