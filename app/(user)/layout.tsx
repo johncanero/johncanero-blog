@@ -17,8 +17,8 @@ export const metadata = {
   description: 'Blog of John Cañero',
   keywords: 'blog, lifestyle, developer, creator',
   icons: {
-    icon: '/johncaneroProfile.ico',
-    shortcut: '/johncaneroProfile.ico',
+    icon: '/images/johncaneroProfile.jpg',
+    shortcut: '/images/johncaneroProfile.jpg',
   },
 }
 
