@@ -7,14 +7,14 @@ function Header() {
             <div className="flex space-x-2">
                 <Link href="/">
                     <Image
-                        className="object-cover rounded-full"
+                        className="object-cover mt-1 rounded-full"
                         width={50}
                         height={50}
                         src="/images/johncaneroProfile.jpg"
                         alt="Logo"
                     />
                 </Link>
-                <h1 className="mt-3 text-sm md:text-base">John Cañero Blog</h1>
+                <h1 className="mt-2 text-sm md:mt-3 md:text-base">John Cañero Blog</h1>
             </div>
             {/* Discover my Creative Projects */}
             <div>
