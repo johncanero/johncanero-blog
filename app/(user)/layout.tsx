@@ -1,6 +1,7 @@
 import "../../styles/globals.css";
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
+import Providers from "@/components/Providers";
 import { Poppins } from '@next/font/google'
 // import { Montserrat } from '@next/font/google'
 
@@ -32,13 +33,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* Input classname = {poppins.className} */}
-      <body className="mx-auto max-w-7xl">
-        <div className={`${poppins.variable} font-poppins`}>
-          <Header />
-          <Banner />
-          {children}
-        </div>
-      </body>
+      {/* Dark Mode: Providers */}
+      <Providers>
+        <body className="mx-auto transition-all duration-700 max-w-7xl bg-zinc-100 dark:bg-zinc-900">
+          <div className={`${poppins.variable} font-poppins`}>
+            <Header />
+            <Banner />
+            {children}
+          </div>
+        </body>
+      </Providers>
     </html>
   )
 }

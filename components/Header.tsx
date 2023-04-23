@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import DarkModeButton from "./DarkModeButton";
 
 function Header() {
     return (
@@ -17,7 +18,9 @@ function Header() {
                 <h1 className="mt-2 text-sm md:mt-3 md:text-base">John Cañero Blog</h1>
             </div>
             {/* Discover my Creative Projects */}
-            <div>
+            <div className="flex gap-3">
+                {/* Dark Mode Button */}
+                <DarkModeButton />
                 <Link
                     href="https://johncanero.com/"
                     target="_blank"
