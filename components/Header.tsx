@@ -18,7 +18,7 @@ function Header() {
                 <h1 className="mt-2 text-sm md:mt-3 md:text-base">John Cañero Blog</h1>
             </div>
             {/* Discover my Creative Projects */}
-            <div className="flex gap-3">
+            <div className="flex gap-3 lg:gap-4">
                 {/* Dark Mode Button */}
                 <DarkModeButton />
                 <Link
