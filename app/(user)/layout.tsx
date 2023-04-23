@@ -1,6 +1,7 @@
 import "../../styles/globals.css";
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
+import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
 import { Poppins } from '@next/font/google'
 // import { Montserrat } from '@next/font/google'
@@ -40,6 +41,7 @@ export default function RootLayout({
             <Header />
             <Banner />
             {children}
+            <Footer />
           </div>
         </body>
       </Providers>
