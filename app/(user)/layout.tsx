@@ -10,7 +10,6 @@ import { Poppins } from '@next/font/google'
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '700', '800', '900'],
-  variable: '--font-poppins'
 })
 
 // Next Js Metadata Documentation
@@ -37,7 +36,7 @@ export default function RootLayout({
       {/* Dark Mode: Providers */}
       <Providers>
         <body className="mx-auto transition-all duration-700 max-w-7xl bg-zinc-100 dark:bg-zinc-900">
-          <div className={`${poppins.variable} font-poppins`}>
+          <div className={poppins.className}>
             <Header />
             <Banner />
             {children}
