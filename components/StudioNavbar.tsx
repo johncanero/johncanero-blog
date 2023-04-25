@@ -10,7 +10,7 @@ function StudioNavbar(props: any) {
           Go To Website
         </Link>
         <div className="p-5 rounded-lg justify-center border-2 border-[#0ea5e9]">
-          <h1 className="dark:text-white">Want to check out my portfolio and see my progress as a developer? 👉 </h1>
+          <h1 className="text-white ">Want to check out my portfolio and see my progress as a developer? 👉 </h1>
           <Link
             href="https://johncanero.com/"
             className="text-[#0ea5e9] font-bold"
