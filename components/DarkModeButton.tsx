@@ -19,13 +19,13 @@ function DarkModeButton() {
 		<div className='mt-3 lg:mt-4'>
 			{currentTheme === 'light' ? (
 				<MoonIcon
-					className="w-6 h-6 text-gray-500 cursor-pointer"
+					className="w-5 h-5 mr-1 text-gray-500 cursor-pointer"
 					onClick={() => setTheme('dark')}
 				/>
 			) : (
 
 				<SunIcon
-					className="w-6 h-6 text-yellow-500 cursor-pointer"
+					className="w-5 h-5 mr-1 text-yellow-500 cursor-pointer"
 					onClick={() => setTheme('light')}
 				/>
 			)}
