@@ -21,7 +21,8 @@ Insights and Reflections from John Cañero
 
 About Life, Career, Technology, Investing, and Self-Realization
 
-Explore my blog to find my personal views and perspectives on a range of topics, and gain insight into my understanding of the world.
+Explore my blog to find my personal views and perspectives on a range of topics,
+and gain insight into my understanding of the world.
 
 #blog #website #fullstackapplication #sanity
 
