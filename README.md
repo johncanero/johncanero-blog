@@ -1,38 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- markdownlint-configure-file {
+  "MD013": {
+    "code_blocks": false,
+    "tables": false
+  },
+  "MD033": false,
+  "MD041": false
+} -->
 
-## Getting Started
+<div align="center">
+  <a href="https://johncanero-blog.vercel.app/" target="_blank">
+    <img alt="johncanero-logo" height="100" src="./public/images/johncaneroProfile.jpg"/>
+  </a>
+</div>
 
-First, run the development server:
+<div align="center">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+# John Cañero Blog
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Insights and Reflections from John Cañero
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+About Life, Career, Technology, Investing, and Self-Realization
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Explore my blog to find my personal views and perspectives on a range of topics, and gain insight into my understanding of the world.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#blog #website #fullstackapplication #sanity
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+</div>
 
-## Learn More
+## Website
 
-To learn more about Next.js, take a look at the following resources:
+🖥️ [https://johncanero-blog.vercel.app/]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✍️ Project by John Cañero
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Responsive Design
 
-## Deploy on Vercel
+🪟: [Desktop - Tablet - Mobile]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Responsive Feature Application Light
+![Responsive Feature - John Cañero Blog Website](./public/images/responsive/johncaneroBlogLightMode.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Responsive Feature Application Dark
+![Responsive Feature - John Cañero Blog Website](./public/images/responsive/johncaneroBlogDarkMode.png)
+
+Desktop Responsive Light
+![Desktop View - John Cañero Blog Website](./public/images/responsive/johncaneroBlogDesktop.png)
+
+Tablet Responsive | Light and Dark
+![Tablet View - John Cañero Blog Website](./public/images/responsive/johncaneroBlogTablet.png)
+Mobile Responsive | Light and Dark
+![Mobile View - John Cañero Blog Website](./public/images/responsive/johncaneroBlogMobile.png)
